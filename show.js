@@ -17,6 +17,6 @@ if (step < 4)
 step++
 else
 step=1
-setTimeout("slideit()", 9000)
+setTimeout("slideit()", 5000)
 }
 slideit()
