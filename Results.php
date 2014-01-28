@@ -39,7 +39,7 @@ ${'item' . $option2} = (int)${'item' . $option2} +1;
 $scs = $_POST['sauce'];
 for($i=0;$i < count($scs);$i++)
 {
-	$num = (int)$tops[$i]+17;
+	$num = (int)$scs[$i]+17;
 	${'item' . $num} = ${'item' . $num} +1;
 }
 
@@ -55,8 +55,11 @@ fclose($fileout);
 ?>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="special2.css">
+	<title>Pizza Results</title>
 </head>
 <body>
+<div id="content">
 <h1> Results </h1>
 <h2> Favorite Toppings </h2>
 
@@ -87,6 +90,6 @@ fclose($fileout);
 		echo $sauce[$i] . " " . ${'item' . (string)($i+17)} . "<br />";
 		}
 	?>
-
+</div>
 </body>
 </html>

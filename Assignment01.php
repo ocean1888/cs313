@@ -7,15 +7,17 @@
 	}
 	else
 	{
-	setcookie($key,"tempUser",time()+6);
+	setcookie($key,"tempUser",time()+600);
 	}
 	
 ?>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="special2.css">
 		<title>Practice Forms</title>
 	</head>
 	<body>
+<div id="content">
 	<h1>Brief Food Survey</h1>
 
 	<form action="Results.php" method="post">
@@ -49,11 +51,12 @@
 	<h3>What sauces do you add to your pizza?</h3>
 	<input type="checkbox" name="sauce[]" value="0"> No Sauce
 	<input type="checkbox" name="sauce[]" value="1"> Ranch Dressing<br />
-	<input type="checkbox" name="sauce[]" value="2"> Buffalo Suace
+	<input type="checkbox" name="sauce[]" value="2"> Buffalo Sauce
 	<input type="checkbox" name="sauce[]" value="3"> Hot Sauce<br />
 	<input type="checkbox" name="sauce[]" value="4"> Other <br />
 	<hr />
 	<input type="submit" name="Submit">
 	</form>
+</div>
 	</body>
 </html>
